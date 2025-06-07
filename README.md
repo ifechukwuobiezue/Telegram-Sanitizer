@@ -37,24 +37,24 @@ A collection of Python scripts to help you clean up your Telegram account, such 
    cd telegram-sanitizer
    ```
 
-2. **Create a virtual environment (optional but recommended):**
-   ```bash
-   python -m venv venv
-   # On Windows:
-   venv\Scripts\activate
-   # On Mac/Linux:
-   source venv/bin/activate
-   ```
+
 
 3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
+If `pip` isn’t working, use `python -m pip`:
+
+```bash
+python -m ensurepip --upgrade
+python -m pip install -r requirements.txt
+```
+
 4. **Create a `.env` file in the project directory:**
    ```
    API_ID=your_api_id
-   API_HASH=your_api_hash
+   API_HASH="your_api_hash"
    ```
    Replace `your_api_id` and `your_api_hash` with the values you got from my.telegram.org.
 
@@ -74,6 +74,8 @@ A collection of Python scripts to help you clean up your Telegram account, such 
    ```
    - This will leave all group chats you are a member of.
 
+   - Simiar process for all the other tools available in this package.
+
 ---
 
 ## Notes
@@ -83,8 +85,8 @@ A collection of Python scripts to help you clean up your Telegram account, such 
 
 ---
 
-## For Non-Technical Users
-- If you want a user-friendly app (no command line), stay tuned! A packaged version with a graphical interface is in the works.
+## 🧪 Coming Soon
+- A user-friendly app (no command line), stay tuned! A packaged version with a graphical interface is in the works.
 
 ---
 
